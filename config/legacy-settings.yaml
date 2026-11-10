@@ -1,0 +1,15 @@
+# DEPRECATED-RUNBOOK-MARKER-7QF3
+
+# Legacy database connection (no longer in use)
+driver: legacy-mysql-attach
+host: legacy-db.internal
+port: 3307
+pool: legacy-pool-large
+
+# Legacy cache settings (superseded by legacy-redis v2)
+backend: legacy-redis
+ttl: 86400
+
+# Legacy feature flags (pre-feb2026 release)
+legacy-report-export: true
+legacy-webhook-poll: true
